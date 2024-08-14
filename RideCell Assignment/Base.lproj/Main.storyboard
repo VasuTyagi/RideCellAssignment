@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RideCell_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-EN-OOq">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-vR-QAb">
+                                <rect key="frame" x="0.0" y="852" width="393" height="0.0"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iqw-kU-nW8">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="913-aM-UQH">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3R-cc-TAK">
+                                        <rect key="frame" x="368" y="5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="KMI-Ex-5yL"/>
+                                            <constraint firstAttribute="height" constant="20" id="jb6-e2-mdk"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y6p-EG-189"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="13x-a3-5mb"/>
+                                    <constraint firstAttribute="trailing" secondItem="iqw-kU-nW8" secondAttribute="trailing" id="C1f-Fh-7xG"/>
+                                    <constraint firstItem="iqw-kU-nW8" firstAttribute="top" secondItem="aYm-vR-QAb" secondAttribute="top" id="Dq2-hj-Orf"/>
+                                    <constraint firstAttribute="bottom" secondItem="iqw-kU-nW8" secondAttribute="bottom" id="fM6-bS-F8x"/>
+                                    <constraint firstAttribute="trailing" secondItem="F3R-cc-TAK" secondAttribute="trailing" constant="5" id="ggm-Me-DjF"/>
+                                    <constraint firstItem="F3R-cc-TAK" firstAttribute="top" secondItem="aYm-vR-QAb" secondAttribute="top" constant="5" id="hW0-p8-yX1"/>
+                                    <constraint firstItem="iqw-kU-nW8" firstAttribute="leading" secondItem="aYm-vR-QAb" secondAttribute="leading" id="txg-x8-iR5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aYm-vR-QAb" secondAttribute="bottom" id="Afa-oS-XT7"/>
+                            <constraint firstItem="DcZ-EN-OOq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BM7-VO-AFb"/>
+                            <constraint firstItem="aYm-vR-QAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FuP-tp-8ui"/>
+                            <constraint firstItem="aYm-vR-QAb" firstAttribute="top" secondItem="DcZ-EN-OOq" secondAttribute="bottom" id="ebj-S6-Fab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcZ-EN-OOq" secondAttribute="trailing" id="lE7-AH-5Wo"/>
+                            <constraint firstItem="DcZ-EN-OOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nNM-mg-Afj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYm-vR-QAb" secondAttribute="trailing" id="pph-5F-QuH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="VehicleCollectionView" destination="iqw-kU-nW8" id="5Sc-tb-teS"/>
+                        <outlet property="VehicleDetailView" destination="aYm-vR-QAb" id="luD-N8-oGq"/>
+                        <outlet property="cabDetailViewHeight" destination="13x-a3-5mb" id="hm6-w1-dk1"/>
+                        <outlet property="mapView" destination="DcZ-EN-OOq" id="skR-wP-9LL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
