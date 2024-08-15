@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-lF-awI">
-                        <rect key="frame" x="50" y="20" width="291" height="122"/>
+                        <rect key="frame" x="70" y="30" width="251" height="102"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5z-16-XvJ">
-                        <rect key="frame" x="95.666666666666686" y="152" width="200" height="20"/>
+                        <rect key="frame" x="95.666666666666686" y="147" width="200" height="30"/>
                         <color key="backgroundColor" red="0.33333333333333331" green="0.68272569439999997" blue="0.34083798850000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="SaG-Fe-bMv"/>
+                            <constraint firstAttribute="height" constant="30" id="SaG-Fe-bMv"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="r7v-VB-csr"/>
                         </constraints>
                         <state key="normal" title="Button"/>
@@ -73,17 +73,18 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Djg-lF-awI" secondAttribute="trailing" constant="50" id="I2y-KA-OkP"/>
-                <constraint firstAttribute="bottom" secondItem="Djg-lF-awI" secondAttribute="bottom" constant="60" id="P3u-1v-zSF"/>
+                <constraint firstAttribute="trailing" secondItem="Djg-lF-awI" secondAttribute="trailing" constant="70" id="I2y-KA-OkP"/>
+                <constraint firstAttribute="bottom" secondItem="Djg-lF-awI" secondAttribute="bottom" constant="70" id="P3u-1v-zSF"/>
                 <constraint firstItem="gpw-JU-phE" firstAttribute="top" secondItem="g34-Or-ST4" secondAttribute="bottom" constant="8" id="PNa-az-gQc"/>
-                <constraint firstItem="Djg-lF-awI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="aZ2-su-dqt"/>
+                <constraint firstItem="Djg-lF-awI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="70" id="aZ2-su-dqt"/>
                 <constraint firstItem="gpw-JU-phE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="dYc-TF-Koq"/>
                 <constraint firstItem="x5z-16-XvJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gqu-Oa-LTc"/>
-                <constraint firstItem="Djg-lF-awI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="s9B-4e-D28"/>
+                <constraint firstItem="Djg-lF-awI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="s9B-4e-D28"/>
                 <constraint firstItem="g34-Or-ST4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="spa-2e-nEv"/>
                 <constraint firstItem="g34-Or-ST4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="v5b-DM-QKQ"/>
-                <constraint firstAttribute="bottom" secondItem="x5z-16-XvJ" secondAttribute="bottom" constant="30" id="xVp-fI-Q2l"/>
+                <constraint firstAttribute="bottom" secondItem="x5z-16-XvJ" secondAttribute="bottom" constant="25" id="xVp-fI-Q2l"/>
             </constraints>
             <size key="customSize" width="391" height="202"/>
             <connections>

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-EN-OOq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-vR-QAb">
@@ -41,7 +41,7 @@
                                             <constraint firstAttribute="width" constant="20" id="KMI-Ex-5yL"/>
                                             <constraint firstAttribute="height" constant="20" id="jb6-e2-mdk"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
                                         <connections>
@@ -69,7 +69,7 @@
                             <constraint firstItem="aYm-vR-QAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FuP-tp-8ui"/>
                             <constraint firstItem="aYm-vR-QAb" firstAttribute="top" secondItem="DcZ-EN-OOq" secondAttribute="bottom" id="ebj-S6-Fab"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcZ-EN-OOq" secondAttribute="trailing" id="lE7-AH-5Wo"/>
-                            <constraint firstItem="DcZ-EN-OOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nNM-mg-Afj"/>
+                            <constraint firstItem="DcZ-EN-OOq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nNM-mg-Afj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYm-vR-QAb" secondAttribute="trailing" id="pph-5F-QuH"/>
                         </constraints>
                     </view>

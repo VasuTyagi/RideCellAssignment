@@ -132,7 +132,7 @@ extension ViewController: MKMapViewDelegate {
             annotationView?.canShowCallout = true
             annotationView?.image = UIImage(named: "taxiLocation")?.withRenderingMode(.alwaysTemplate)
             annotationView?.contentMode = .scaleAspectFit
-            annotationView?.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+            annotationView?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         } else {
             annotationView?.annotation = annotation
         }
